@@ -1,0 +1,41 @@
+$flaticon-font: "flaticon";
+
+@font-face {
+    font-family: $flaticon-font;
+    src: url("./flaticon.ttf?123f0148469afe6f809e15477c02d266") format("truetype"),
+url("./flaticon.woff?123f0148469afe6f809e15477c02d266") format("woff"),
+url("./flaticon.woff2?123f0148469afe6f809e15477c02d266") format("woff2"),
+url("./flaticon.eot?123f0148469afe6f809e15477c02d266#iefix") format("embedded-opentype"),
+url("./flaticon.svg?123f0148469afe6f809e15477c02d266#flaticon") format("svg");
+}
+
+i[class^="flaticon-"]:before, i[class*=" flaticon-"]:before {
+    font-family: flaticon !important;
+    font-style: normal;
+    font-weight: normal !important;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+$flaticon-map: (
+    "chart": "\f101",
+    "blackboard": "\f102",
+    "microscope": "\f103",
+    "blackboard-1": "\f104",
+);
+
+.flaticon-chart:before {
+    content: map-get($flaticon-map, "chart");
+}
+.flaticon-blackboard:before {
+    content: map-get($flaticon-map, "blackboard");
+}
+.flaticon-microscope:before {
+    content: map-get($flaticon-map, "microscope");
+}
+.flaticon-blackboard-1:before {
+    content: map-get($flaticon-map, "blackboard-1");
+}
